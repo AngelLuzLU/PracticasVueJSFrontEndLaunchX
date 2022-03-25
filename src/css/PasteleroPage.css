@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    margin:0;
+}
+body, footer{   
+    background-color: #F786AA;
+}
+#LogoNav{
+    height:  64px;
+}
+nav{
+    height: 64px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    margin-top: 0;
+    background-color:#f7e6e6;
+}
+.NavLinkContainer{
+    display: flex;
+    margin: 0 20px 0 0;
+    padding: 0;
+    width: 100%;
+    align-content: center;
+    justify-content: right;
+    align-items: center;
+}
+.NavLink{
+    margin-left: 15px;
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: black;
+}
+section{
+    padding-top: 64px;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 45px;
+    padding-left: 2%;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.ContainerPasteles{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 15px;
+    column-gap: 15px; 
+    width: 100%;
+}
+
+.PastelImgContainer{
+    border: solid white;
+    border-width: 10px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 0;
+    padding: 0;  
+}
+
+.PastelImg{
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+    padding: 0;   
+    width: 380px;
+}
+
+.DecoracionImgContainer{
+    border: solid white;
+    border-width: 10px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 0;
+    padding: 0;  
+}
+
+.DecoracionImg{
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+    padding: 0;  
+    width: 570px; 
+}
+.ContainerDecoraciones{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 15px;
+    column-gap: 15px;
+    width: 100%;
+}
+
+h3{
+    font-family: 'EB Garamond';
+}
+p, li{
+    font-family: 'Montserrat';
+    text-align: justify;
+    color: rgb(80,80,80);
+}
+.green{
+    color: rgb(4, 182, 123);
+    text-align: center;
+}
+
+.red{
+    color: rgb(209, 13, 13);
+    text-align: center;
+}
+
+.StockLinkContainer{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.StockLink{
+    color: rgb(170,170,170);
+}
+
+table{
+    border-collapse: collapse;
+    background-color: #f6f6f6;
+    width: 100%;
+}
+
+th,td{
+    text-align: center;
+    border: solid rgb(170,170,170) 3px;
+}
+th{
+    font-family: 'EB Garamond';
+}
+td{
+    font-family: 'Montserrat';
+}
+table p{
+    font-family: 'Montserrat';
+    text-align: center;
+    color: black;
+}
+
+.tableContainer{
+    border: solid white 20px;
+    border-radius: 12px;
+    margin: 0 5% 0 5%;
+    overflow-x: auto;
+}
+.actualizacionCont{
+    position: fixed;
+    z-index: 100;
+    background-color: rgb(200,200,200);
+    top: 35%;
+    display:flex;
+    flex-direction: column;
+    padding: 0px 10px 10px 10px;
+    border: 5px solid white;
+    border-radius: 20px;
+    font-family: 'Roboto';
+    width: 30%;
+    min-width: 200px;
+}
+.exitAct{
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    border-radius: 4px;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.exitCont{
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.actualizacionCont label{
+    font-size: 14px;
+    text-align: justify;
+}
+.actualizacionCont input{
+    height: 25px;
+    border-radius: 8px;
+    width:80%;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.stockCont{
+    display:flex;
+    justify-content: center;
+}
+.actBtn{
+    height: 30px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+footer{
+    background-color: rgb(240,240,240);
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 12px 12px 0 0;
+    padding-top: 5px;
+}
+
+@media (max-width: 740px) {
+    .DecoracionImg{ 
+    width: 380px; 
+}
+}
+@media (max-width: 540px){
+    .NavLink{
+        margin-left: 5px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 510px){
+    .DecoracionImg{
+        width: 280px; 
+    }
+    .PastelImg{  
+        width: 280px;
+    }
+    p{
+        font-size: 10px;
+    }
+    .ContainerDecoraciones{
+        padding-left: 5px;    
+    }
+    .ContainerPasteles{
+        padding-left: 5px;
+    }
+}
+
+@media (max-width: 440px){
+    .NavLink{
+        margin-left: 5px;
+        font-size: 10px;    
+    }
+    .NavLinkContainer{
+        flex-direction: column;
+        margin: 0;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+}
+
+

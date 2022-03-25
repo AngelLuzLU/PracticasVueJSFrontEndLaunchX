@@ -1,22 +1,35 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <div><img src="./assets/Logo_horizontal.png" alt="Logo Intergalactic Bakery"></div>
+    <div class="routerLinks">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/pastelero">Pastelero</router-link>
+    </div>
   </nav>
-  <router-view />
+  <router-view/>
 </template>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 
 nav {
-  padding: 30px;
+  display: flex;
+  
+}
+nav img{
+  height: 64px;
+}
+.routerLinks{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 20px;
+  font-family: 'Roboto';
+  font-size: 20px;
 }
 
 nav a {
